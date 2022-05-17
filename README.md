@@ -39,7 +39,9 @@ Confirming the Docker image got pushed to my Docker Hub repo.
 Followed the [Kubernetes CD Quickstart](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
 <img src="images/cd-console.png">
 <img src="images/cd-dashboard.png">
-
+<br><br>
+Confirming nginx was deployed to my GKE cluster. Public IP listed in GCP console.
+<img src="images/nginx.png" width=600 height=1300>
 
 ## Notes
 * It took some trial and error to get my GKE environment configured with enough resources for CI to run successfully. 
@@ -51,9 +53,9 @@ Followed the [Kubernetes CD Quickstart](https://ngdocs.harness.io/article/knunou
 - Repository: https://github.com/parsontodd/lab-may-2022
 - References:
   - [GKE quickstart](https://cloud.google.com/kubernetes-engine/docs/deploy-app-cluster#standard)
-  - [Enabling autoscaling](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler)
-  - [CI Quickstart](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)
-  - [Kubernetes CD Quickstart](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
-  - [Install a Kubernetes Delegate](https://ngdocs.harness.io/article/f9bd10b3nj-install-a-kubernetes-delegate#sort=relevanc)
+  - [GKE Enabling autoscaling](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler)
+  - [Harness CI Quickstart](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)
+  - [Harness Kubernetes CD Quickstart](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
+  - [Harness Install a Kubernetes Delegate](https://ngdocs.harness.io/article/f9bd10b3nj-install-a-kubernetes-delegate#sort=relevanc)
 
 
