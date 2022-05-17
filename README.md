@@ -9,7 +9,7 @@ This is an overview of some of my learnings from hands on exercises with CI/CD w
 - [ ] Setup Harness CI.
 - [ ] Setup Harness CD.
 
-## Setting up GKE
+## Set up GKE
 1. Follow [GKE Quick Start](https://cloud.google.com/kubernetes-engine/docs/deploy-app-cluster#standard).
 2. Reuse hello-cluster created above. 
 3. Per GCP documentation on [enabling autoscaling](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler), run these commands to enable autoscaling on the cluster created
@@ -27,7 +27,10 @@ This is where I spent the most time. I initially attempted [minikube setup with 
   * That said, the troubleshooting helped me better understand minikube, kubectl, and k8 in general. 
   
 ## Harness CI Quick Start
-Great documentation at [CI Quick Start](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)<br>
+* Great documentation at [CI Quick Start](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)
+* As previously mentioned, I ran into some issues with the GKE hello-cluster not having autoscaling enabled and not meeting minimum compute requirements for the delegate and build farm but after searching Google's documentation, I got the issues resolved.
+* I used the Hello World repo in the Harness quick start guide (https://github.com/keen-software/goHelloWorldServer)
+* I created a new Docker Hub account, repo, and PAT.<br><br>
 **Success!**
 <img src="images/ci-console.png">
 <img src="images/ci-dashboard.png">
@@ -36,7 +39,9 @@ Confirming the Docker image got pushed to my Docker Hub repo.
 <img src="images/docker.png">
 
 ## Harness CD Quick Start
-Followed the [Kubernetes CD Quick Start](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
+* Followed the [Kubernetes CD Quick Start](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
+* Failed the first time because I reused my GitHub connector from the CI Quick Start that was configured for a different repo. I created a new connector pointing to the k8 repo and.....<br><br>
+**Success!**
 <img src="images/cd-console.png">
 <img src="images/cd-dashboard.png">
 <br><br>
