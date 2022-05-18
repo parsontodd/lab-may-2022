@@ -8,6 +8,7 @@ This is an overview of some of my learnings from hands on exercises with CI/CD w
 - [ ] Install Harness delegate.
 - [ ] Setup Harness CI.
 - [ ] Setup Harness CD.
+- [ ] Setup Harness Cloud Cost Management (in-progress).
 
 ## Set up GKE
 1. Follow [GKE Quick Start](https://cloud.google.com/kubernetes-engine/docs/deploy-app-cluster#standard).
@@ -48,11 +49,17 @@ Confirming the Docker image got pushed to my Docker Hub repo.
 Confirming nginx was deployed to my GKE cluster. Public IP listed in GCP console.
 <img src="images/nginx.png" width=600 height=1300>
 
+## Setup Harness Cloud Cost Management
+1. [Setup GCP Cloud Billing Export to BigQuery](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup)<br><img src="images/billing-export.png">
+2. Follow Harness documentation for [Set Up Cloud Visibility for GCP](https://docs.harness.io/article/x53e2by67m-enable-cloud-efficiency-for-google-cloud-platform-gcp)
+
+
 ## Notes
 * It took some trial and error to get my GKE environment configured with enough resources for CI to run successfully. 
 * I used the GCP console's cloud shell due to proxy issues running locally.
 * I spent too much time troubleshooting minikube on my local machine.
   * GKE was a breeze! (once I got auto-scaling working)
+* GCP billing export will take 24-48 hours to populate in Big Query and make its way to Harness Cloud Cost Management (waiting to validate the setup).
   
 ## Links
 - Repository: https://github.com/parsontodd/lab-may-2022
@@ -62,5 +69,6 @@ Confirming nginx was deployed to my GKE cluster. Public IP listed in GCP console
   - [Harness CI Quick Start](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)
   - [Harness Kubernetes CD Quick Start](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
   - [Harness Install a Kubernetes Delegate](https://ngdocs.harness.io/article/f9bd10b3nj-install-a-kubernetes-delegate#sort=relevanc)
+  - [Set Up Cloud Visibility for GCP](https://docs.harness.io/article/x53e2by67m-enable-cloud-efficiency-for-google-cloud-platform-gcp)
 
 
