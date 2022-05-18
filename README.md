@@ -52,6 +52,7 @@ Confirming nginx was deployed to my GKE cluster. Public IP listed in GCP console
 ## Setup Harness Cloud Cost Management
 1. [Setup GCP Cloud Billing Export to BigQuery](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup)<br><img src="images/billing-export.png">
 2. There is documentation for setting this up - [Set Up Cloud Visibility for GCP](https://docs.harness.io/article/x53e2by67m-enable-cloud-efficiency-for-google-cloud-platform-gcp) - but the GCP Connector wizard on the Harness platform does a pretty good job explaining the setup process as you go. I followed the GCP Connector wizard. There are differences between the wizard and the documentation, specifically around the IAM permissions to configure in BigQuery, so we'll see how it goes.
+   * Update: I found [documentation for next gen CCM](https://ngdocs.harness.io/article/kxnsritjls-set-up-cost-visibility-for-gcp). I'll need to edit or recreate my GCP connector altogether but it appears I need to wait 24 hours after the initial creation to be able to make changes.
 
 
 ## Notes
@@ -69,6 +70,6 @@ Confirming nginx was deployed to my GKE cluster. Public IP listed in GCP console
   - [Harness CI Quick Start](https://ngdocs.harness.io/article/x0d77ktjw8-ci-pipeline-quickstart)
   - [Harness Kubernetes CD Quick Start](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
   - [Harness Install a Kubernetes Delegate](https://ngdocs.harness.io/article/f9bd10b3nj-install-a-kubernetes-delegate#sort=relevanc)
-  - [Set Up Cloud Visibility for GCP](https://docs.harness.io/article/x53e2by67m-enable-cloud-efficiency-for-google-cloud-platform-gcp)
+  - [Harness Set Up Cloud Cost Visibility for GCP](https://ngdocs.harness.io/article/kxnsritjls-set-up-cost-visibility-for-gcp)
 
 
