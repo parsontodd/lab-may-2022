@@ -40,6 +40,7 @@ Confirming the Docker image got pushed to my Docker Hub repo.
 <img src="images/docker.png">
 
 ## Harness CD Quick Start
+**NOTE:** I used the sample code repos that were suggested in the CI Quick Start and CD Quick Start guides. The quick starts offered different repos, so I separated the build of one repo from the deployment of a different repo.
 * Followed the [Kubernetes CD Quick Start](https://ngdocs.harness.io/article/knunou9j30-kubernetes-cd-quickstart)
 * Failed the first time because I reused my GitHub connector from the CI Quick Start that was configured for a different repo. I created a new connector pointing to the k8 repo and.....<br><br>
 **Success!**
